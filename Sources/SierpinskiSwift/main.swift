@@ -6,12 +6,10 @@
 
 import SVGLibrary
 
-// YOUR CODE HERE
 
 // Draw a triangle between the three points and then recursively draw
 // three more triangles in each of the three corners of the first triangle.
 func sierpinski(p1: Point, p2: Point, p3: Point, level: Int, figure: SVG) {
-    // YOUR CODE HERE
     if level <= 0 {
         return
     }
