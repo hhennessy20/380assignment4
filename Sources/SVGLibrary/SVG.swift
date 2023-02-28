@@ -35,7 +35,7 @@ open class SVG {
     public func write(filePath: String) {
         svgFile = svgFile + "</svg>\n"
          do {
-            try svgFile.write(toFile: filePath, atomically: true, encoding: UInt(4))
+            try svgFile.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
         } catch {
             print("\(error)")
         }
